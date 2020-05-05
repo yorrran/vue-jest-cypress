@@ -13,7 +13,8 @@ module.exports = {
     '!src/router.ts',
     '!src/**.d.ts',
   ],
-  testMatch: ['**/tests/{unit, integration}/**.spec.ts'],
+  testMatch: ['**/tests/unit/**.spec.ts', '**/tests/Integration/**.spec.ts'],
   collectCoverage: true,
   moduleFileExtensions: ['js', 'ts', 'vue', 'tsx'],
+  coverageReporters: ['json', 'text'],
 };

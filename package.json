@@ -11,7 +11,7 @@
     "test:jest": "jest",
     "test:full": "npm run test:jest & npm run test:e2e",
     "test:coverage": "rm -rf coverage && jest --coverage && istanbul report --include coverage/coverage-final.json text>coverage/coverage.txt",
-    "coverage": "npm run test:coverge && node bin/test_coverage.js"
+    "coverage": "npm run test:coverage && node bin/test_coverage.js"
   },
   "pre-commit": [
     "coverage"
@@ -20,6 +20,7 @@
     "axios": "^0.19.2",
     "babel-preset-env": "^1.7.0",
     "core-js": "^3.6.4",
+    "istanbul": "^0.4.5",
     "jest-vue-preprocessor": "^1.7.1",
     "pre-commit": "^1.2.2",
     "ts-jest": "^25.0.0",

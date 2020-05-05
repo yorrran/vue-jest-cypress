@@ -9,7 +9,7 @@ fs.readFile(filePath, function(err, data) {
     .split(' ')
     .filter(val => val !== '' && val !== '|');
   for (i in val) {
-    if (Number(val[i]) > 0 && Number(val[i]) < 80) {
+    if (Number(val[i]) > 0 && Number(val[i]) < 70) {
       process.exit(1);
     }
   }
