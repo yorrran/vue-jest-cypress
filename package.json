@@ -10,7 +10,8 @@
     "lint": "vue-cli-service lint",
     "test:jest": "jest",
     "test:full": "npm run test:jest & npm run test:e2e",
-    "coverage": "bin/test_coverage.sh"
+    "test:coverage": "rm -rf coverage && jest --coverage && istanbul report --include coverage/coverage-final.json text>coverage/coverage.txt",
+    "coverage": "npm run test:coverge && node bin/test_coverage.js"
   },
   "pre-commit": [
     "coverage"
